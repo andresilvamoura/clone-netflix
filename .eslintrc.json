@@ -21,7 +21,6 @@
         "airbnb-typescript/base"
       ],
       "rules": {
-        "linebreak-style": ["error", "windows"],
         "no-use-before-define": ["error", { "variables": false }],
         "@angular-eslint/directive-selector": [
           "error",
