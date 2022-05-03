@@ -1,3 +1,7 @@
+/***************************************************************************************************
+ * Load `$localize` onto the global scope - used if i18n tags appear in Angular templates.
+ */
+import '@angular/localize/init';
 /* eslint-disable max-len */
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.
