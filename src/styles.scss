@@ -14,7 +14,5 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 body {
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    // background: #141414;
-    background: url("https://image.tmdb.org/t/p/original/wPU78OPN4BYEgWYdXyg0phMee64.jpg");
-    background-size: cover;
+    background: #141414;
 }
