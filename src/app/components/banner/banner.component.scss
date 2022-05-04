@@ -1,0 +1,66 @@
+.banner {
+     background: url(https://image.tmdb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg);
+     background-size: cover !important; 
+     height:  100vh;
+ 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+ 
+     color: #fff;
+     font-weight: 400;
+     line-height: normal;
+     width: 100%;
+     font-size: 20px;
+     text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+ }
+ 
+ .container-banner {
+     padding-left: 3.75rem;
+ }
+ 
+ .banner-title {
+     font-size: 30px;
+     margin-bottom: 2vw;
+ }
+ 
+ .banner-description {
+     margin-bottom: 2vw;
+ }
+ 
+ .banner-buttons {
+     display: flex;   
+ }
+ 
+ button {
+     border: none;
+     border-radius: 4px;
+     padding: 0.6vw 1.2vw 0.6vw 1.2vw;
+     cursor: pointer;
+ }
+ 
+ .play-button {
+     display: flex;
+     background-color: white;
+     color: black;
+     justify-content: space-between;
+ }
+ 
+ .more-button {
+     background-color: rgba(109,109,110,0.7);
+     color: white;
+     margin-left: 0.8rem;
+ }
+ 
+ .play-button:hover {
+     background-color: rgba(255, 255, 255, 0.7);
+ }
+ 
+ .more-button:hover {
+     background-color: rgba(109,109,110,0.4);
+ }
+ 
+ .icons {
+     margin-right: 0.8rem;
+ }
