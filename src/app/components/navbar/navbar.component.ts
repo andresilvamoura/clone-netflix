@@ -25,10 +25,13 @@ export class NavbarComponent implements OnInit {
 
   navChangeColorWhenScroll() {
     window.addEventListener('scroll', () => {
+      const query = document.querySelector('nav')?.classList;
       if (window.pageYOffset > 100) {
-        document.querySelector('nav')?.classList.add('bg-black', 'shadow');
+        query?.add('bg-black');
+        query?.remove('bg-black_opac');
       } else {
-        document.querySelector('nav')?.classList.remove('bg-black', 'shadow');
+        query?.remove('bg-black');
+        query?.add('bg-black_opac');
       }
     });
   }

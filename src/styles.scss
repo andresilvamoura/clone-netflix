@@ -4,13 +4,18 @@ $theme-colors: (
 );
 
 $custom-colors: (
-  "black": rgb(20, 20, 20)
+  "black": rgb(20, 20, 20),
+  "black_opac": rgba(20, 20, 20, 0.300),
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+@import "~swiper/css/navigation";
 
 body {
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
