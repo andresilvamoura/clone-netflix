@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { endpointArray } from '../models/endpoint';
+import { Endpoint, endpointArray } from '../models/endpoint';
 import { Movies } from '../models/movies';
 
 @Injectable({
@@ -14,6 +14,10 @@ export class MoviesService {
 
   private apiKey = environment.apiKey;
 
+  endpoint = Endpoint;
+
+  endpointArray = endpointArray;
+
   constructor(private http: HttpClient) { }
 
   getRandomInteger(min: number, max: number) {
@@ -21,7 +25,7 @@ export class MoviesService {
   }
 
   getRandomEndpoint() {
-    return endpointArray[this.getRandomInteger(0, endpointArray.length - 1)];
+    return this.endpointArray[this.getRandomInteger(0, this.endpointArray.length - 1)];
   }
 
   getTopTranding(): Observable<Movies> {
