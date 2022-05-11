@@ -3,5 +3,8 @@
 </header>
 <main>
     <app-banner></app-banner>
-    <app-slider></app-slider>
+    <app-slider title="Lançamentos" [endpoint]="now_playing"></app-slider>
+    <app-slider title="Mais Votados" [endpoint]="top_rated"></app-slider>
+    <app-slider title="Em Breve" [endpoint]="upcoming"></app-slider>
+    <app-slider title="Populares" [endpoint]="popular"></app-slider>
 </main>

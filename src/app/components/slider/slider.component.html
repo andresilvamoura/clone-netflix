@@ -1,10 +1,8 @@
-<h4>Lançamentos</h4>
+<h4>{{title}}</h4>
 <div class="slider-container">
-    <swiper 
-    [config]="config" 
-    class="mySwiper">
-        <ng-template swiperSlide *ngFor="let movie of movies">
-            <img src="https://image.tmdb.org/t/p/w200{{movie}}" alt="">
+    <swiper [config]="config" class="mySwiper">
+        <ng-template swiperSlide *ngFor="let movie of movies.results">
+            <img src="https://image.tmdb.org/t/p/w200{{movie?.poster_path}}" alt="{{movie.title}}">
         </ng-template>
     </swiper>
 </div>
