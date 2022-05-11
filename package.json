@@ -9,7 +9,8 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "deploy:ghdocs": "ng build --prod --output-path docs --base-href /clone-netflix/"
   },
   "private": true,
   "dependencies": {
