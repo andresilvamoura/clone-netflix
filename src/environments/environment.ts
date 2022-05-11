@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  apiKey: '10bc956afe5a47cab5a5c7b7a56da205',
 };
 
 /*
@@ -14,5 +15,3 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
-
-export default environment;

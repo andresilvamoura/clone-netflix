@@ -13,8 +13,6 @@ export class NavbarComponent implements OnInit {
 
   faBell = faBell;
 
-  constructor() { }
-
   ngOnInit(): void {
     this.navChangeColorWhenScroll();
   }
